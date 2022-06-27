@@ -1,4 +1,25 @@
 ﻿
+/*Snack 10 - Fai inserire un numero , che chiameremo N, all'utente.
+ Genera N array, ognuno formato da 10 numeri casuali tra 1 e 100.
+Ogni volta che ne crei uno, stampalo a schermo.*/
+
+Console.WriteLine("Inserisci un numero");
+int N = int.Parse(Console.ReadLine());
+var rand = new Random();
+
+for (int i = 0; i < N; i++)
+{
+    int[] arrayUtente = new int[10];
+    for (int j = 0; j < 10; j++)
+    {
+        arrayUtente[j] = rand.Next(1, 100);
+    }
+
+    Console.WriteLine("L'array è composto da:" + arrayUtente);
+}
+
+
+
 /*Snack 5 - Il software chiede all'utente di inserire un numero.
  * Se il numero inserito è pari, stampa il numero, se è dispari, stampa il numero successivo.*/
 
