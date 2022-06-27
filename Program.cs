@@ -17,9 +17,9 @@ for (int i = 0; i < N; i++)
         arrayUtente[j] = rand.Next(1, 101);
     }
 
-    for(int k = 0; k < arrayUtente.Length; k++)
+    for(int j = 0; j < arrayUtente.Length; j++)
     {
-        Console.Write(arrayUtente[i] + " ");
+        Console.Write(arrayUtente[j] + " ");
     }
 
     Console.WriteLine();
