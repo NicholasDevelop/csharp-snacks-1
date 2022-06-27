@@ -5,17 +5,24 @@ Ogni volta che ne crei uno, stampalo a schermo.*/
 
 Console.WriteLine("Inserisci un numero");
 int N = int.Parse(Console.ReadLine());
-var rand = new Random();
+Random rand = new Random();
+int[] arrayUtente;
 
 for (int i = 0; i < N; i++)
 {
-    int[] arrayUtente = new int[10];
+    arrayUtente = new int[10];
+
     for (int j = 0; j < 10; j++)
     {
-        arrayUtente[j] = rand.Next(1, 100);
+        arrayUtente[j] = rand.Next(1, 101);
     }
 
-    Console.WriteLine("L'array è composto da:" + arrayUtente);
+    for(int k = 0; k < arrayUtente.Length; k++)
+    {
+        Console.Write(arrayUtente[i] + " ");
+    }
+
+    Console.WriteLine();
 }
 
 
